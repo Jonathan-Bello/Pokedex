@@ -1,0 +1,83 @@
+/* ESTILOS BASE */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - var(--header-height));
+  color: var(--color-text);
+  padding-top: var(--header-height);
+  font-family: var(--font-body);
+  font-size: var(--font-size-normal);
+  line-height: var(--body-line-height);
+  background-color: var(--color-bg-main);
+  margin: 00;
+
+  @include to(768px) {
+    padding-bottom: var(--header-height);
+    background-image: linear-gradient(white, rgba(0, 225, 255, 0.582))
+    // background-image: url(../../assets/pkm-bg3.gif);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    padding-bottom: 70px;
+  }
+}
+
+/* Estilos base a nuestras etiquetas HTML generales*/
+a {
+  color: var(--color-text);
+}
+
+a:hover {
+  color: var(--color-primary-300);
+  text-decoration-line: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  /* Para evitar el colapsado de margenes */
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Para evitar el colapsado de margenes */
+  margin-top: 0;
+  color: var(--color-title);
+  font-family: var(--font-title);
+  line-height: var(--title-line-height);
+  /* Para que este mas grueso que el texto normal */
+  font-weight: 600;
+}
+
+/* Definición nuestras variables del tamaño de los titulos */
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
