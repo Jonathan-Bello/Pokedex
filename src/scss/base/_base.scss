@@ -11,14 +11,14 @@ body {
   background-color: var(--color-bg-main);
   margin: 00;
 
+  background-image: url(../../assets/bg.svg);
+  background-position: center;
+  background-size: cover;
+
   @include to(768px) {
     min-height: 100vh;
     background-image: linear-gradient(white, rgba(0, 225, 255, 0.308));
     padding-bottom: var(--header-height);
-    // background-image: url(../../assets/pkm-bg3.gif);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
   }
 }
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Pokemon from "../models/pokemon";
+import PkmImages from "./PkmImages";
 import Pkminfo from "./Pkminfo";
 import Pkmstats from "./Pkmstats";
 
@@ -22,44 +23,19 @@ const PokemonContainer = () => {
   return (
     <>
       {pokemon ? (
-        <section className="pkmcontainer ">
-          <div className="pkmcontainer__imgcontainer pt-4">
-            <img
-              className="pkmcontainer__img"
-              src={pokemon.sprites.front_default}
-              alt="front pokemon"
-            />
-            {pokemon.sprites.back_default && (
-              <img
-                className="pkmcontainer__img"
-                src={pokemon.sprites.back_default}
-                alt="back pokemon"
-              />
-            )}
-          </div>
-          <h1 className="pkmcontainer__name mt-4">
-            {pokemon.name} {`#${pokemon.order}`}
-          </h1>
-          <div className="pkmcontainer__types mb-4">
-            <span
-              className={"pkmcontainer__type--" + pokemon.types[0].type.name}
-            >
-              {pokemon.types[0].type.name}
-            </span>
-            {pokemon?.types[1] && (
-              <span
-                className={"pkmcontainer__type--" + pokemon.types[1].type.name}
-              >
-                {pokemon?.types[1].type.name}
-              </span>
-            )}
-          </div>
+        <section className="pkmcontainer ed-grid s-grid-1 lg-grid-2">
+          <PkmImages {...pokemon} />
           <Pkmstats {...pokemon} />
           <Pkminfo {...pokemon} />
+          <div className="s-center lg-left mt-4 ms-lg-4 mt-lg-0">
+            <button className="btnPkm" onClick={getPokemonRandom}>
+              Otro pokémon
+            </button>
+          </div>
         </section>
       ) : (
-        <div className="pkmcontainer__loading">
-          <img src="./assets/loading.gif" alt="loading" />
+        <div className="pkmcontainer s-cross-center s-main-center">
+          <div className="lds-dual-ring"></div>
         </div>
       )}
     </>

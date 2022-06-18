@@ -1,0 +1,62 @@
+// boton con forma de pokeball
+.btnPkm {
+  border-radius: 0.5rem;
+  padding: 1em 3rem;
+  font-weight: 600;
+  background-color: var(--color-primary-600);
+  color: var(--color-grey-100);
+  border: none;
+
+  @include from(lg) {
+    &:hover {
+      background-color: var(--color-primary-800);
+    }
+  }
+
+  @include to(lg) {
+    width: 8rem;
+    height: 8rem;
+    padding: 0;
+    border-radius: 50%;
+    margin-bottom: -2rem;
+    background-color: #bc0c21;
+    color: var(--color-grey-100);
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.342);
+    &:active {
+      background-color: var(--color-primary-800);
+      color: var(--color-grey-100);
+    }
+  }
+}
+
+.btnPkm--ghost {
+  border-radius: 0.5rem;
+  padding: 0.5em 3rem;
+  background-color: var(--color-grey-100);
+  color: var(--color-primary-600);
+  font-weight: 600;
+  border: 2px solid var(--color-primary-600);
+  @include from(lg) {
+    &:hover {
+      background-color: var(--color-primary-600);
+      color: var(--color-grey-100);
+    }
+  }
+
+  @include to(lg) {
+    width: 8rem;
+    height: 8rem;
+    padding: 0;
+    border-radius: 50%;
+    margin-bottom: -2rem;
+    background-color: var(--color-grey-100);
+    color: #bc0c21;
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.342);
+    &:active {
+      background-color: #bc0c21;
+      color: var(--color-grey-100);
+    }
+  }
+}
