@@ -1,0 +1,122 @@
+.pkmcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.pkmcontainer__imgcontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pkmcontainer__img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
+}
+
+.pkmcontainer__name {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--color-grey-800);
+  text-transform: capitalize;
+}
+
+.pkmcontainer__stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.pkmcontainer__types {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pkmcontainer__type--normal {
+  @include pkmtype("normal");
+}
+
+.pkmcontainer__type--fire {
+  @include pkmtype("fire");
+}
+
+.pkmcontainer__type--water {
+  @include pkmtype("water");
+}
+
+.pkmcontainer__type--electric {
+  @include pkmtype("electric");
+}
+
+.pkmcontainer__type--grass {
+  @include pkmtype("grass");
+}
+
+.pkmcontainer__type--ice {
+  @include pkmtype("ice");
+}
+
+.pkmcontainer__type--fighting {
+  @include pkmtype("fighting");
+}
+
+.pkmcontainer__type--poison {
+  @include pkmtype("poison");
+}
+
+.pkmcontainer__type--ground {
+  @include pkmtype("ground");
+}
+
+.pkmcontainer__type--flying {
+  @include pkmtype("flying");
+}
+
+.pkmcontainer__type--psychic {
+  @include pkmtype("psychic");
+}
+
+.pkmcontainer__type--bug {
+  @include pkmtype("bug");
+}
+
+.pkmcontainer__type--rock {
+  @include pkmtype("rock");
+}
+
+.pkmcontainer__type--ghost {
+  @include pkmtype("ghost");
+}
+
+.pkmcontainer__type--dragon {
+  @include pkmtype("dragon");
+}
+
+.pkmcontainer__type--dark {
+  @include pkmtype("dark");
+}
+
+.pkmcontainer__type--steel {
+  @include pkmtype("steel");
+}
+
+.pkmcontainer__type--fairy {
+  @include pkmtype("fairy");
+}
+
+.pkmcontainer__type-- {
+  @include pkmtype("???");
+}

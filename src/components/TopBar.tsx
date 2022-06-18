@@ -1,7 +1,7 @@
 const TopBar = () => {
   return (
     <>
-      <div className="topbar d-none d-lg-block">
+      <div className="topbar d-none d-md-block">
         <img
           src="./assets/dots.svg"
           alt="dots de pokedex vieja"
@@ -9,8 +9,8 @@ const TopBar = () => {
         />
       </div>
       {/* // TopBar Mobile */}
-      <div className="d-lg-none topbar--mobile"></div>
-      <div className="d-lg-none bottombar--mobile"></div>
+      <div className="d-md-none topbar--mobile"></div>
+      <div className="d-md-none bottombar--mobile"></div>
     </>
   );
 };

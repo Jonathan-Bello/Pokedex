@@ -1,0 +1,94 @@
+@mixin pkmtype($type) {
+  @if $type == "normal" {
+    background-color: #a8a878;
+    border: 1px solid #6d6d4e;
+    @extend .pkmtype;
+  } @else if $type == "fire" {
+    background-color: #f08030;
+    border: 1px solid #9c531f;
+    @extend .pkmtype;
+  } @else if $type == "water" {
+    background-color: #6890f0;
+    border: 1px solid #445e9c;
+    @extend .pkmtype;
+  } @else if $type == "electric" {
+    background-color: #f8d030;
+    border: 1px solid #a1871f;
+    @extend .pkmtype;
+  } @else if $type == "grass" {
+    background-color: #78c850;
+    border: 1px solid #4e8234;
+    @extend .pkmtype;
+  } @else if $type == "ice" {
+    background-color: #98d8d8;
+    border: 1px solid #638d8d;
+    @extend .pkmtype;
+  } @else if $type == "fighting" {
+    background-color: #c03028;
+    border: 1px solid #7d1f1a;
+    @extend .pkmtype;
+  } @else if $type == "poison" {
+    background-color: #a040a0;
+    border: 1px solid #682a68;
+    @extend .pkmtype;
+  } @else if $type == "ground" {
+    background-color: #e0c068;
+    border: 1px solid #927d44;
+    @extend .pkmtype;
+  } @else if $type == "flying" {
+    background-color: #a890f0;
+    border: 1px solid #6d5e9c;
+    @extend .pkmtype;
+  } @else if $type == "psychic" {
+    background-color: #f85888;
+    border: 1px solid #a13959;
+    @extend .pkmtype;
+  } @else if $type == "bug" {
+    background-color: #a8b820;
+    border: 1px solid #6d7815;
+    @extend .pkmtype;
+  } @else if $type == "rock" {
+    background-color: #b8a038;
+    border: 1px solid #786824;
+    @extend .pkmtype;
+  } @else if $type == "ghost" {
+    background-color: #705898;
+    border: 1px solid #493963;
+    @extend .pkmtype;
+  } @else if $type == "dragon" {
+    background-color: #7038f8;
+    border: 1px solid #4924a1;
+    @extend .pkmtype;
+  } @else if $type == "dark" {
+    background-color: #705848;
+    border: 1px solid #49392f;
+    @extend .pkmtype;
+  } @else if $type == "steel" {
+    background-color: #b8b8d0;
+    border: 1px solid #787887;
+    @extend .pkmtype;
+  } @else if $type == "fairy" {
+    background-color: #dda0dd;
+    border: 1px solid #ac7cac;
+    @extend .pkmtype;
+  } @else if $type == "???" {
+    background-color: #6a6a6a;
+    @extend .pkmtype;
+  } @else {
+    background-color: #6a6a6a;
+    @extend .pkmtype;
+  }
+}
+
+.pkmtype {
+  border-radius: 0.5em;
+  font-family: "Trebuchet MS";
+  font-weight: bold;
+  min-width: 6em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: rgb(247, 242, 242);
+  text-shadow: 0em 0em 0.2em black;
+  line-height: 1.5rem;
+}

@@ -12,18 +12,13 @@ body {
   margin: 00;
 
   @include to(768px) {
+    min-height: 100vh;
+    background-image: linear-gradient(white, rgba(0, 225, 255, 0.308));
     padding-bottom: var(--header-height);
-    background-image: linear-gradient(white, rgba(0, 225, 255, 0.582))
     // background-image: url(../../assets/pkm-bg3.gif);
     // background-position: center;
     // background-repeat: no-repeat;
     // background-size: cover;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  body {
-    padding-bottom: 70px;
   }
 }
 

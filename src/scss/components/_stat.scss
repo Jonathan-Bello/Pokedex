@@ -1,0 +1,34 @@
+.statbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+}
+
+.statbarboostrap {
+  background-color: var(--color-grey-200);
+  border-radius: 0.4em;
+  color: var(--color-secondary-200);
+  column-fill: red;
+}
+
+.stat__name {
+  color: var(--color-grey-700);
+  font-size: small;
+  font-weight: 600;
+}
+
+.stat__value {
+  color: var(--color-grey-700);
+  font-size: small;
+  font-weight: 600;
+}
+
+.stat__progresscontainer {
+  display: flex;
+  flex-direction: row;
+}
