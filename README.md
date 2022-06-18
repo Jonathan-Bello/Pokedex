@@ -9,6 +9,12 @@ Es una página responsiva, y con la caraácteritica plus de cambiar de diseño m
 - Desktop: Pókedex original.
 - Mobile: Pokedex de sexta generación.
 
-!["Captura de versión mobile"](./readme/mobile-version.png)
+<!-- !["Captura de versión mobile"](./readme/mobile-version.png)
 
-!["Captura de versión desktop"](./readme/desktop-version.png)
+!["Captura de versión desktop"](./readme/desktop-version.png) -->
+
+<!-- Colocar imagenes una al lado del otra -->
+
+|!["Captura de versión desktop"](./readme/desktop-version.png)
+|!["Captura de versión mobile"](./readme/mobile-version.png)
+|
