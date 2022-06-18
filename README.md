@@ -2,19 +2,27 @@
 
 Prueba técnica con el objetivo de mostrar mis habilidades en el desarrollo frontend.
 
-Es una página que consulta un pokémon de manera aleatoria, al entrar por primera vez y mediante el botón de consulta.
+Es una página que consulta un Pokémon de manera aleatoria, al entrar por primera vez y mediante el botón de consulta a la api [pokeapi](https://pokeapi.co/).
 
-Es una página responsiva, y con la caraácteritica plus de cambiar de diseño mediante el tamaño de pantalla.
+Es una página responsiva, y con la característica plus de cambiar de diseño mediante el tamaño de pantalla.
 
-- Desktop: Pókedex original.
-- Mobile: Pokedex de sexta generación.
+## Inspiraciones de los diseños
 
-<!-- !["Captura de versión mobile"](./readme/mobile-version.png)
+- Desktop: Basada en la pokédex original.
+- Mobile: Basada en la pokédex de sexta generación.
 
-!["Captura de versión desktop"](./readme/desktop-version.png) -->
+## Tecnologías usadas
 
-<!-- Colocar imagenes una al lado del otra -->
+- React
+- Sass
+- Bootstrap
+- EDgrid
+- Svg (Los svg utilizados fueron creados por mí)
 
-|!["Captura de versión desktop"](./readme/desktop-version.png)
-|!["Captura de versión mobile"](./readme/mobile-version.png)
-|
+## Versión Mobile
+
+!["Captura de versión mobile"](./readme/mobile-version.png)
+
+## Versión Desktop
+
+!["Captura de versión desktop"](./readme/desktop-version.png)
