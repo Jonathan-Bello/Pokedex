@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Pokemon from "../models/pokemon";
 import PkmImages from "./PkmImages";
 import Pkminfo from "./Pkminfo";
@@ -10,14 +11,25 @@ const PokemonContainer = () => {
   const getPokemonRandom = async () => {
     const id = Math.floor(Math.random() * 898) + 1;
     await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
-      // await fetch(`http://localhost:3050/pokemon`)
       .then((res) => res.json())
-      .then((data) => setPokemon(data))
+      .then((data) => {
+        setPokemon(data);
+        const pokemons = JSON.parse(localStorage.getItem("pokemons") || "[]");
+        pokemons.push(data);
+        localStorage.setItem("pokemons", JSON.stringify(pokemons));
+        console.log(pokemons);
+      })
       .catch((err) => console.log(err));
   };
 
   useEffect(() => {
     getPokemonRandom();
+
+    const interval = setInterval(() => {
+      console.log("This will run every second!");
+      getPokemonRandom();
+    }, 30000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -27,10 +39,20 @@ const PokemonContainer = () => {
           <PkmImages {...pokemon} />
           <Pkmstats {...pokemon} />
           <Pkminfo {...pokemon} />
-          <div className="s-center lg-left mt-4 ms-lg-4 mt-lg-0">
-            <button className="btnPkm" onClick={getPokemonRandom}>
-              Otro pokémon
-            </button>
+          <div className=" ed-grid s-grid-2 lg-grid-1 lg-end mt-4 ms-lg-4 mt-lg-0">
+            <div className="s-cross-center s-main-center lg-main-start mb-4">
+              <button className="btnPkm" onClick={getPokemonRandom}>
+                Otro pokémon
+              </button>
+            </div>
+            <div className="s-cross-center s-main-center lg-main-start">
+              <Link
+                className="btnPkm--ghost s-cross-center s-main-center"
+                to={"/historical"}
+              >
+                Historial
+              </Link>
+            </div>
           </div>
         </section>
       ) : (

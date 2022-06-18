@@ -2,7 +2,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 88vh;
   @include from(768px) {
     height: 100%;
   }
