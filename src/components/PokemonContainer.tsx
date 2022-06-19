@@ -40,17 +40,17 @@ const PokemonContainer = () => {
           <Pkmstats {...pokemon} />
           <Pkminfo {...pokemon} />
           <div className=" ed-grid s-grid-2 lg-grid-1 lg-end mt-4 ms-lg-4 mt-lg-0">
-            <div className="s-cross-center s-main-center lg-main-start mb-4">
+            <div className="s-cross-center s-main-center lg-main-start mb-lg-4">
               <button className="btnPkm" onClick={getPokemonRandom}>
-                Otro pokémon
+                Mostrar pokémon
               </button>
             </div>
             <div className="s-cross-center s-main-center lg-main-start">
               <Link
-                className="btnPkm--ghost s-cross-center s-main-center"
+                className="btnPkm--ghost s-center s-cross-center s-main-center"
                 to={"/historical"}
               >
-                Historial
+                Mostrar pokémon guardados
               </Link>
             </div>
           </div>
