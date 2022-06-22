@@ -6,7 +6,7 @@ Es una página que consulta un Pokémon de manera aleatoria, al entrar por prime
 
 Es una página responsiva, y con la característica plus de cambiar de diseño mediante el tamaño de pantalla.
 
-[Link al sitio](https://stately-chebakia-eaa744.netlify.app/)
+[Link al sitio](https://classy-zuccutto-1b8eba.netlify.app/)
 
 ## Inspiraciones de los diseños
 
